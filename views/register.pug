@@ -1,0 +1,25 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Registration form
+h2 Parkville Automotives
+.container
+  form(action = '/form/submit' method = 'POST')
+    .form.group
+      label(for='') Customer Name:
+      input.form-control(type='text')
+    .form.group
+      label(for='') Email:
+      input.form-control(type='alphanumeric characters')
+    .form.group
+      label(for='') Telephone Number:
+      input.form-control(type='number')
+    .form.group
+      label(for='') Vehicle Type:
+      input.form-control(type='text')
+    .form.group
+      label(for='') Number plate:
+      input.form-control(type='text')
+    button.btn.btn-success(type='submit') Submit

@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=di, initial-scale=1.0')
+  link(rel='stylesheet' href='Signup.css')
+  title Signup Form
+.container
+  h2 Sign up 
+  form(action='/Login' method='post')
+    .uname
+      div
+        input#uName(type='text' name='userName' placeholder='User Name')
+        br
+        // <input type="text" name="lastName" id="lastName" placeholder="last Name">
+      .page-item
+        input#email(type='email' name='email' placeholder='Enter Email')
+      .page-item
+        span.pwd-format  8-15 AlphaNumeric Characters
+        input#password(type='password' name='password' placeholder='Enter Password')
+        br
+        div
+          input#confirmPasssword(type='passsword' name='Confirm Password' placeholder='Confirm Password')
+        .accept-tile
+          p
+            span
+              input#accept(type='checkbox' name='accept')
+            |  I agree to the 
+            a(href='#') Terms &amp; Conditions
+        .form-btns
+          button.btn.btn-primary(type='button' disabled='') Sign Up
+          .options
+            | Already have an account? 
+            a(href='#') Login here
+  .footer
+    small
+      p Copyright &copy; www.parkville.com
+script(src='validation.js')

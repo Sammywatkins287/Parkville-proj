@@ -1,0 +1,31 @@
+{
+  "name": "class-project",
+  "version": "1.0.0",
+  "description": "storing in the mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Sammywatkins287"
+  },
+  "author": "Sam",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.3",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^5.3.0",
+    "mongoose": "^6.2.5",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.0.0",
+    "pug": "^3.0.2"
+  }
+}
